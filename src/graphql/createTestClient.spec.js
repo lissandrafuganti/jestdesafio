@@ -1,5 +1,5 @@
 const { createTestClient } = require('apollo-server-testing');
-const server = require('./../');
+const server = require('./../../src/index');
 const { query } = createTestClient(server);
 import "core-js/stable";
 import "regenerator-runtime/runtime";

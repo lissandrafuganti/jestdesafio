@@ -7,10 +7,10 @@ import "regenerator-runtime/runtime";
 const resolvers = {
  
   Query:{
-    async function getUser(root,({ id }),({ models })){
+    getUser:async (root,{ id },{ models })=>{
       return  await models.User.findByPk(id)
     },
-    async function getPessoa(root, ({ id }), ({ models })){
+    getPessoa:async(root, { id },{ models })=>{
       return await models.Pessoa.findByPk(id)
     }
     
